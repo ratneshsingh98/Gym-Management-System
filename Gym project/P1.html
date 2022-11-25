@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local GYM Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&family=Stint+Ultra+Condensed&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(P1bg.jpg);
+            color: white;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-family: 'Stint Ultra Condensed', cursive;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 30px;
+            top: 20px;
+
+
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 33%;
+            margin: 20px auto;
+            /* above 3 lines are written to bring mid box in center  */
+
+
+        }
+
+        .right {
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            color: white;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 30px 20px;
+            font-size: 1.3em;
+        }
+
+        .navbar li a:hover {
+            cursor: pointer;
+            color: violet;
+        }
+
+        .left img {
+            width: 40px;
+            /* if we have image in black color then in order to convert this image in white color use filter: invert(100%); and vice-versa. */
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .btn {
+            padding: 10px;
+            margin: 3px 10px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border: 2px solid yellowgreen;
+            font-size: 1.1rem;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-family: 'Stint Ultra Condensed', cursive;
+
+        }
+
+        .btn:hover {
+            background-color: goldenrod;
+        }
+
+        .container2 {
+            border: 2px solid green;
+            border: 2px solid white;
+            margin: 100px 70px;
+            width: 30%;
+            padding: 70px;
+            border-radius: 12px;
+
+
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 300px;
+            margin: 6px auto;
+            border-radius: 12px;
+            padding: 0.6em;
+            font-size: 1.1em;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-family: 'Stint Ultra Condensed', cursive;
+
+
+        }
+
+        .container2 h3 {
+            text-align: center;
+            font-size: 1.6em;
+        }
+
+        .container2 button {
+            display: block;
+            width: 100px;
+            margin: auto;
+            padding: 6px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <!-- left box for logo  -->
+        <div class="left">
+            <div>Fitness Website</div>
+            <img src="P1logo.jpg" alt="Image Not Found">
+        </div>
+        <!-- mid box for navbar  -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons  -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container2">
+        <h3>Join The GYM Immediately</h3>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Mob. No.">
+            </div>
+            <button class="btn2">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
